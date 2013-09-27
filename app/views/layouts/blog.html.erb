@@ -1,0 +1,6 @@
+<%= extends :application do %>
+  <% replace :title, "My Blog – " %>
+  <% replace :description, "Justin French blogs here on Ruby, Rails, Design, Formtastic, etc" %>
+  <% prepend :keywords, "blog, weblog, design links, ruby links, formtastic release notes, " %>
+  <%= yield %>
+<% end %>

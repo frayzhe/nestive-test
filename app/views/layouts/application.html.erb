@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= area :title, "JustinFrench.com" %></title>
+  <meta name="description" content="<%= area :description, "This is my website." %>">
+  <meta name="keywords" content="<%= area :keywords, "justin, french, ruby, design" %>">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="content">
+      <%= area :content do %>
+        <p>Default content goes here.</p>
+      <% end %>
+    </div>
+    <div id="sidebar">
+      <%= area :sidebar do %>
+        <h2>About Me</h2>
+        <p>...</p>
+      <% end %>
+    </div>
+  </div>
+  <%= yield %>
+</body>
+</html>
